@@ -22,6 +22,9 @@ autoinstall:
   # late-commands:
   #   - "apt update && apt upgrade -y"
 
-runcmd:
-  - [ apt, update, '--yes' ]
-  - [ apt, upgrade, '--yes' ]
+# runcmd:
+#   - [ apt, update, '--yes' ] # не работает, так как корень примонтирован к /cow
+#   - [ apt, upgrade, '--yes' ]
+
+package_update: true
+package_upgrade: true
