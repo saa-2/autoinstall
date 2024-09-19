@@ -16,5 +16,5 @@ autoinstall:
   #     eth0:
   #       dhcp4: true
   interactive-sections:
-    - identity.hostname  # Имя хоста
+    - identity  # Имя хоста
     # - network            # Настройки сети
