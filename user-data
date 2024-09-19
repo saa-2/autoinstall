@@ -1,10 +1,10 @@
 #cloud-config
 autoinstall:
   version: 1
-  # identity:
-  #   hostname: Ubuntu
-  #   username: alex
-  #   password: "$6$c2aFBQjHk7D$73sbZGX/R4yZDwht.XEhDjE.sVQRWj2vq0.XNE1YvmBEZhd1qMHQKxfSYJvytZXlqXUWKOCaP6UkzM5tJThfm1"
+  identity:
+    hostname: Ubuntu
+    username: alex
+    password: "$6$c2aFBQjHk7D$73sbZGX/R4yZDwht.XEhDjE.sVQRWj2vq0.XNE1YvmBEZhd1qMHQKxfSYJvytZXlqXUWKOCaP6UkzM5tJThfm1"
   ssh:
     install-server: true
   storage:
@@ -15,6 +15,9 @@ autoinstall:
   #   ethernets:
   #     eth0:
   #       dhcp4: true
-  interactive-sections:
-    - identity  # Имя хоста
+  # interactive-sections:
+  #   - identity  # Имя хоста
     # - network            # Настройки сети
+
+  late-commands:
+    - "apt update && apt upgrade -y"
