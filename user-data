@@ -19,5 +19,9 @@ autoinstall:
   #   - identity  # Имя хоста
     # - network            # Настройки сети
 
-  late-commands:
-    - "apt update && apt upgrade -y"
+  # late-commands:
+  #   - "apt update && apt upgrade -y"
+
+runcmd:
+  - [ apt, update, '--yes' ]
+  - [ apt, upgrade, '--yes' ]
