@@ -1,10 +1,10 @@
 #cloud-config
 autoinstall:
   version: 1
-  identity:
-    hostname: Ubuntu
-    username: alex
-    password: "$6$c2aFBQjHk7D$73sbZGX/R4yZDwht.XEhDjE.sVQRWj2vq0.XNE1YvmBEZhd1qMHQKxfSYJvytZXlqXUWKOCaP6UkzM5tJThfm1"
+  # identity:
+  #   hostname: Ubuntu
+  #   username: alex
+  #   password: "$6$c2aFBQjHk7D$73sbZGX/R4yZDwht.XEhDjE.sVQRWj2vq0.XNE1YvmBEZhd1qMHQKxfSYJvytZXlqXUWKOCaP6UkzM5tJThfm1"
   ssh:
     install-server: true
   storage:
