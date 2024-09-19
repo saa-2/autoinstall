@@ -1,0 +1,17 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: Ubuntu
+    username: alex
+    password: "$6$c2aFBQjHk7D$73sbZGX/R4yZDwht.XEhDjE.sVQRWj2vq0.XNE1YvmBEZhd1qMHQKxfSYJvytZXlqXUWKOCaP6UkzM5tJThfm1"
+  ssh:
+    install-server: true
+  storage:
+    layout:
+      name: direct  # Автоматическая разметка
+  network:
+    version: 2
+    ethernets:
+      eth0:
+        dhcp4: true
