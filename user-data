@@ -28,6 +28,6 @@ autoinstall:
 
 package_update: true
 package_upgrade: true
-packages:
-  - mc
+# packages:
+#   - mc
   
